@@ -1,0 +1,25 @@
+---
+title: "data_wrangle"
+author: "Cheryl Logan"
+date: "4/10/2018"
+output: html_document
+---
+
+Read in the measurements for gill filament width (n=3), lamellar length (n=3) and lamellar width (n=3 for 3 different lamellae) for 31 excel files. Measurements were made using ImageJ in triplicate
+
+```{r setup, echo = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse) # load tidverse package
+```
+
+## Load Dataset
+Open the data files using tidyverse `read_csv` function
+```{r load data, message = FALSE, warning = FALSE}
+# to load as .csv
+cross355 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/Results KGB 355 cross 2017-09-01.csv")
+
+control_370_1 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/Results KGB 370 control 2017-07-10.csv")
+
+control_370_2 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/results KGB 370 control 2 2017-07-10.csv")
+
+# Devon- keep writing the code to load all of your files!
+```
