@@ -21,5 +21,7 @@ control_370_1 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/Re
 
 control_370_2 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/results KGB 370 control 2 2017-07-10.csv")
 
+control_371 <- read.csv("C:/Users/Dprey/Desktop/gill results/control_371")
+
 # Devon- keep writing the code to load all of your files! This is fun
 ```
