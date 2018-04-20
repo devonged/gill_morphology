@@ -13,7 +13,7 @@ library(tidyverse) # load tidverse package
 
 ## Load Dataset
 Open the data files using tidyverse `read_csv` function
-```{r load data, message = FALSE, warning = FALSE}
+
 # to load as .csv
 cross355 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/Results KGB 355 cross 2017-09-01.csv")
 
@@ -22,6 +22,70 @@ control_370_1 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/Re
 control_370_2 <- read_csv("/Users/loga8761/Google Drive/LoganLab/People/Devon/results KGB 370 control 2 2017-07-10.csv")
 
 control_371 <- read.csv("C:/Users/Dprey/Desktop/gill results/control_371")
+```{r load data, message = FALSE, warning = FALSE}
+
+
+cross_355 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_355.csv")
+
+control_370 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_370.csv")
+
+control_370_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_370_2.csv")
+
+control_371 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_371.csv")
+
+control_372 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_372.csv")
+
+control_373 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_373.csv")
+
+control_374 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_374.csv")
+
+control_375 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_375.csv")
+
+control_376 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_376.csv")
+
+control_378 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_378.csv")
+
+control_379 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_379.csv")
+
+unknown_382 <- read_csv("C:/Users/Dprey/Desktop/gill results/unknown_382.csv")
+
+PH_385 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_385.csv")
+
+PH_394 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_394.csv")
+
+PH_395 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_395.csv")
+
+PH_400 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_400.csv")
+
+DO_401 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_401.csv")
+
+DO_406 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_406.csv")
+
+DO_409 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_409.csv")
+
+DO_413 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_413.csv")
+
+DO_420 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_420.csv")
+
+cross_432 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_432.csv")
+
+cross_434 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_434.csv")
+
+cross_434_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_434_2.csv")
+
+cross_437 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_437.csv")
+
+cross_438_1 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_1.csv")
+
+cross_438_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_2.csv")
+
+cross_438_3 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_3.csv")
+
+DO_491 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_491.csv")
+
+PH_554 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_554.csv")
+
+DO_413 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_413.csv")
 
 # Devon- keep writing the code to load all of your files! This is fun
 ```
