@@ -28,8 +28,8 @@ control_371 <- read.csv("C:/Users/Dprey/Desktop/gill results/control_371")
 cross_355 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_355.csv")
 cross_355 <-  mutate(cross_355, ID="355", treatment="cross")
   
-control_370 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_370.csv")
-control_370 <-  mutate(control_370, ID="370", treatment="control")
+#control_370 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_370.csv")
+#control_370 <-  mutate(control_370, ID="370", treatment="control")
 
 control_370_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_370_2.csv")
 control_370_2 <-  mutate(control_370_2, ID="370_2", treatment="control")
@@ -58,8 +58,8 @@ control_378 <-  mutate(control_378, ID="378", treatment="control")
 control_379 <- read_csv("C:/Users/Dprey/Desktop/gill results/control_379.csv")
 control_379 <-  mutate(control_379, ID="379", treatment="control")
 
-unknown_382 <- read_csv("C:/Users/Dprey/Desktop/gill results/unknown_382.csv")
-unknown_382 <-  mutate(unknown_382, ID="382", treatment="unknown")
+#unknown_382 <- read_csv("C:/Users/Dprey/Desktop/gill results/unknown_382.csv")
+#unknown_382 <-  mutate(unknown_382, ID="382", treatment="unknown")
 
 PH_385 <- read_csv("C:/Users/Dprey/Desktop/gill results/PH_385.csv")
 PH_385 <-  mutate(PH_385, ID="385", treatment="PH")
@@ -91,8 +91,8 @@ DO_420 <-  mutate(DO_420, ID="420", treatment="DO")
 cross_432 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_432.csv")
 cross_432 <-  mutate(cross_432, ID="432", treatment="cross")
 
-cross_434 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_434.csv")
-cross_434 <-  mutate(cross_434, ID="434", treatment="cross")
+#cross_434 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_434.csv")
+#cross_434 <-  mutate(cross_434, ID="434", treatment="cross")
 
 cross_434_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_434_2.csv")
 cross_434_2 <-  mutate(cross_434_2, ID="434_2", treatment="cross")
@@ -103,11 +103,11 @@ cross_437 <-  mutate(cross_437, ID="437", treatment="cross")
 cross_438_1 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_1.csv")
 cross_438_1 <-  mutate(cross_438_1, ID="438", treatment="cross")
 
-cross_438_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_2.csv")
-cross_438_2 <-  mutate(cross_438_2, ID="438_2", treatment="cross")
+#cross_438_2 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_2.csv")
+#cross_438_2 <-  mutate(cross_438_2, ID="438_2", treatment="cross")
 
-cross_438_3 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_3.csv")
-cross_438_3 <-  mutate(cross_438_3, ID="438_3", treatment="cross")
+#cross_438_3 <- read_csv("C:/Users/Dprey/Desktop/gill results/cross_438_3.csv")
+#cross_438_3 <-  mutate(cross_438_3, ID="438_3", treatment="cross")
 
 
 DO_491 <- read_csv("C:/Users/Dprey/Desktop/gill results/DO_491.csv")
@@ -125,8 +125,12 @@ bind all data sets together into single data frame
 
 Repeat measurement for cross 432 then add in and run again
 
+Removed extra samples and the unknown from the code and going to add cross 432
+
+Removed files: cross_438_2, cross_438_3,unknown_382, control_370,cross_434, 
+
 ```{r}
-morpho_all <- bind_rows(cross_355, control_370, control_370_2, control_371,control_372, control_373, control_374, control_375, control_376, control_378, control_379, unknown_382, PH_385, PH_394, PH_395, PH_400, DO_401, DO_406, DO_409, DO_413, DO_420, cross_434, cross_434_2, cross_437, cross_438_1, cross_438_2, cross_438_3, DO_491, PH_554 )
+morpho_all <- bind_rows(cross_355, control_370_2, control_371,control_372, control_373, control_374, control_375, control_376, control_378, control_379, PH_385, PH_394, PH_395, PH_400, DO_401, DO_406, DO_409, DO_413, DO_420, cross_432, cross_434_2, cross_437, cross_438_1, DO_491, PH_554 )
 
 dim(morpho_all)
 ```
